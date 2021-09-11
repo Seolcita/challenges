@@ -1,0 +1,175 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap');
+/* 
+color: #e0e8ff;
+color: #3829e0;
+color: #f5f7ff;
+color: #7280a7;
+color: #1f2f56; 
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e8ff;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 62.5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 330px;
+  height: 560px;
+  background-color: #fff;
+  margin: 0;
+  border-radius: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  /* background-image: url('images/illustration-hero.svg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.summary {
+  text-align: center;
+  padding: 0.8rem 0 1.7rem;
+}
+
+.title {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.description {
+  color: #7280a7;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.plan {
+  width: 85%;
+  background-color: #f5f7ff;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-title {
+  color: #1f2f56;
+  margin-bottom: 0;
+  margin-left: -1.4rem;
+  padding-bottom: 0;
+}
+
+.plan-price {
+  color: #7280a7;
+  margin-left: -1.4rem;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 300;
+}
+
+.plan-link {
+  font-size: 0.8rem;
+  cursor: pointer;
+  /* color: #8270f4; */
+}
+
+.plan-link:hover {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #8270f4;
+}
+
+.btn {
+  width: 85%;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  letter-spacing: 0.2px;
+  background-color: #3829e0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.payment {
+  background-color: #3829e0;
+  box-shadow: 0.2rem 1rem 0.5rem rgb(172 190 244 / 40%);
+}
+
+.payment:hover {
+  background-color: #8270f4;
+}
+
+.cancel {
+  background-color: #fff;
+  color: grey;
+}
+
+.cancel:hover {
+  color: #1f2f56;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  body {
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  }
+}
+
+@media (min-width: 1441px) {
+  body {
+    width: 100%;
+    background-image: url(images/wp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    width: 1300px;
+    height: 700px;
+    background-color: #e0e8ff;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    z-index: 1;
+    box-shadow: 0.3rem 1rem 1rem grey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
