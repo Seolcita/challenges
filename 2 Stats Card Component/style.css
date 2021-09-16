@@ -201,6 +201,13 @@ img {
 }
 
 @media (max-width: 500px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 5rem;
+  }
   .container {
     width: 90%;
     /* height: auto; */
