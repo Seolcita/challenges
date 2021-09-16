@@ -256,4 +256,8 @@ img {
     margin-bottom: 3rem;
     text-align: center;
   }
+
+  .img-container::before {
+    border-radius: 10px 10px 0 0;
+  }
 }
